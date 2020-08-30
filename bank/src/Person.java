@@ -4,6 +4,18 @@ public class Person {
     private int cashAmount;
     private BankAccount account;
 
+    public Person(String pName, int pAge, int pCashAmount) {
+        name = pName;
+        age = pAge;
+        cashAmount = pCashAmount;
+    }
+
+    public Person(String pName, int pAge) {
+        name = pName;
+        age = pAge;
+        cashAmount = 0;
+    }
+
     public void setAge(int newAge) {
         if (newAge >= 0) {
             age = newAge;
@@ -38,5 +50,13 @@ public class Person {
 
     public BankAccount getAccount() {
         return account;
+    }
+
+    public boolean transfer(Person to, int amount) {
+        return account.transfer(to.getAccount(), amount);
+    }
+
+    public boolean transfer(BankAccount to, int amount) {
+        return account.transfer(to, amount);
     }
 }

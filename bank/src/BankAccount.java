@@ -1,10 +1,26 @@
 public class BankAccount {
-    int balance;
-    Person owner;
+    private int balance;
+    private Person owner;
+
+    public void setBalance(int balances) {
+        balance = balances;
+    }
+
+    public int getBalance() {
+        return balance;
+    }
+
+    public void setOwner(Person newOwner) {
+        owner = newOwner;
+    }
+
+    public Person getOwner() {
+        return owner;
+    }
 
     // 파라미터 : 입금할 액수 (정수)
     // 리턴 : 성공여부 (불린)
-    boolean deposit(int amount) {
+    public boolean deposit(int amount) {
         if ((owner.getCashAmount() - amount) < 0 || amount < 0) {
             System.out.print("입금 실패입니다. ");
             System.out.print("잔고: " + balance + "원, ");
@@ -19,6 +35,10 @@ public class BankAccount {
             return true;
         }
     }
+
+//    public boolean deposit(double amount, double exchangeRate) {
+//        return deposit((int) (amount * exchangeRate));
+//    }
 
     // 파라미터 : 출금할 액수 (정수)
     // 리턴 : 성공여부 (불린)
@@ -44,4 +64,27 @@ public class BankAccount {
 //    boolean transfer(Person to, int amount) {
 //
 //    }
+
+    public boolean transfer(Person to, int amount) {
+        return transfer(to.getAccount(), amount);
+    }
+
+    public boolean transfer (BankAccount to, int amount) {
+        boolean success;
+
+        if (amount < 0 || amount > balance) {
+            success = false;
+        } else {
+            balance -= amount;
+            to.balance += amount;
+            success = true;
+        }
+
+        System.out.println(success + " - from: " + owner.getName()
+                + ", to: " + to.getOwner().getName()
+                + ", amount: " + amount
+                + ", balance: " + balance);
+
+        return success;
+    }
 }
