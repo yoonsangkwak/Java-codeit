@@ -6,10 +6,11 @@ public class BankDriver {
 //        p1.setAge(28);
 //        p1.setCashAmount(30000);
 
-        Person p1 = new Person("김신의",8,30000);
+        Person p1 = new Person("김신의",8);
+        p1.setCashAmount(30000);
 
         // 은행 계좌 1
-        BankAccount a1 = new BankAccount();
+        BankAccount a1 = new BankAccount(p1);
         a1.setBalance(100000);
 
         p1.setBankAccount(a1);
@@ -20,11 +21,11 @@ public class BankDriver {
 //        p2.setName("문종모");
 //        p2.setAge(25);
 //        p2.setCashAmount(100000);
-        Person p2 = new Person("문종모",25);
+        Person p2 = new Person("문종모",25, 100000);
 
         // 은행 계좌 2
-        BankAccount a2 = new BankAccount();
-        a2.setBalance(500000);
+        BankAccount a2 = new BankAccount(500000, p2);
+//        a2.setBalance(500000);
 
         p2.setBankAccount(a2);
         a2.setOwner(p2);

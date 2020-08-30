@@ -6,13 +6,25 @@ public class Person {
 
     public Person(String pName, int pAge, int pCashAmount) {
         name = pName;
-        age = pAge;
-        cashAmount = pCashAmount;
+        if (pAge < 0) {
+            age = 12;
+        } else {
+            age = pAge;
+        }
+        if (pCashAmount < 0) {
+            cashAmount = 0;
+        } else {
+            cashAmount = pCashAmount;
+        }
     }
 
     public Person(String pName, int pAge) {
         name = pName;
-        age = pAge;
+        if (pAge < 0) {
+            age = 12;
+        } else {
+            age = pAge;
+        }
         cashAmount = 0;
     }
 

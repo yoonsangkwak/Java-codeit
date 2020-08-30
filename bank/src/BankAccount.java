@@ -18,6 +18,28 @@ public class BankAccount {
         return owner;
     }
 
+    public BankAccount(int pBalance) {
+        if (pBalance < 0) {
+            balance = 0;
+        } else {
+            balance = pBalance;
+        }
+    }
+
+    public BankAccount(Person pOwner) {
+        owner = pOwner;
+        balance = 0;
+    }
+
+    public BankAccount(int pBalance, Person pOwner) {
+        if (pBalance < 0) {
+            balance = 0;
+        } else {
+            balance = pBalance;
+        }
+        owner = pOwner;
+    }
+
     // 파라미터 : 입금할 액수 (정수)
     // 리턴 : 성공여부 (불린)
     public boolean deposit(int amount) {
