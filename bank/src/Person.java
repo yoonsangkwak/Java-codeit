@@ -4,17 +4,17 @@ public class Person {
     private int cashAmount;
     private BankAccount account;
 
-    public Person(String pName, int pAge, int pCashAmount) {
-        name = pName;
-        if (pAge < 0) {
-            age = 12;
+    public Person(String name, int age, int cashAmount) {
+        this.name = name;
+        if (age < 0) {
+            this.age = 12;
         } else {
-            age = pAge;
+            this.age = age;
         }
-        if (pCashAmount < 0) {
-            cashAmount = 0;
+        if (cashAmount < 0) {
+            this.cashAmount = 0;
         } else {
-            cashAmount = pCashAmount;
+            this.cashAmount = cashAmount;
         }
     }
 
@@ -28,9 +28,9 @@ public class Person {
         cashAmount = 0;
     }
 
-    public void setAge(int newAge) {
-        if (newAge >= 0) {
-            age = newAge;
+    public void setAge(int age) {
+        if (age >= 0) {
+            this.age = age;
         }
     }
 
@@ -38,17 +38,17 @@ public class Person {
         return age;
     }
 
-    public void setName(String newName) {
-        name = newName;
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {
         return name;
     }
 
-    public void setCashAmount(int newCashAmount) {
-        if (newCashAmount >= 0) {
-            cashAmount = newCashAmount;
+    public void setCashAmount(int cashAmount) {
+        if (cashAmount >= 0) {
+            this.cashAmount = cashAmount;
         }
     }
 
@@ -56,8 +56,8 @@ public class Person {
         return cashAmount;
     }
 
-    public void setBankAccount(BankAccount newAccount) {
-        account = newAccount;
+    public void setBankAccount(BankAccount account) {
+        this.account = account;
     }
 
     public BankAccount getAccount() {
