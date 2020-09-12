@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/ArrayList/ArrayList.iml" filepath="$PROJECT_DIR$/ArrayList/ArrayList.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ChangeUnit/ChangeUnit.iml" filepath="$PROJECT_DIR$/ChangeUnit/ChangeUnit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/FloydsPyramid/FloydsPyramid.iml" filepath="$PROJECT_DIR$/FloydsPyramid/FloydsPyramid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/GreatestDifference/GreatestDifference.iml" filepath="$PROJECT_DIR$/GreatestDifference/GreatestDifference.iml" />
+      <module fileurl="file://$PROJECT_DIR$/HashMap/HashMap.iml" filepath="$PROJECT_DIR$/HashMap/HashMap.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Introduce/Introduce.iml" filepath="$PROJECT_DIR$/Introduce/Introduce.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java-codeit.iml" filepath="$PROJECT_DIR$/.idea/Java-codeit.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Market/Market.iml" filepath="$PROJECT_DIR$/Market/Market.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pokedex/Pokedex.iml" filepath="$PROJECT_DIR$/Pokedex/Pokedex.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Pyramid/Pyramid.iml" filepath="$PROJECT_DIR$/Pyramid/Pyramid.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Scanner/Scanner.iml" filepath="$PROJECT_DIR$/Scanner/Scanner.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Survive/Survive.iml" filepath="$PROJECT_DIR$/Survive/Survive.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Triangle/Triangle.iml" filepath="$PROJECT_DIR$/Triangle/Triangle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/TryCatch/TryCatch.iml" filepath="$PROJECT_DIR$/TryCatch/TryCatch.iml" />
+      <module fileurl="file://$PROJECT_DIR$/WordDictionary/WordDictionary.iml" filepath="$PROJECT_DIR$/WordDictionary/WordDictionary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/average/average.iml" filepath="$PROJECT_DIR$/average/average.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bank/bank.iml" filepath="$PROJECT_DIR$/bank/bank.iml" />
+    </modules>
+  </component>
+</project>
