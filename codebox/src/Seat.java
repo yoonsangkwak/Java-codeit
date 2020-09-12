@@ -10,7 +10,7 @@ public class Seat {
     }
 
     public void cancel() {
-        this.name = null;
+        name = null;
     }
 
     public boolean isOccupied() {
