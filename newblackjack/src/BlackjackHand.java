@@ -1,10 +1,10 @@
-public class BlackjackHand extends Deck {
+public class BlackjackHand extends Deck<BlackjackCard> {
     public int getValue() {
         int value = 0;
         int aceCount = 0;
 
-        for (Card c : getCards()) {
-            BlackjackCard card = (BlackjackCard) c;
+        for (BlackjackCard card : getCards()) {
+//            BlackjackCard card = (BlackjackCard) c;
 
             if (card.isAce()) {
                 aceCount++;
